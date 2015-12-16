@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    script(src='http://code.jquery.com/jquery-2.1.4.min.js')
+    meta(charset='utf-8')
+    | &#x9;&#x9;
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    | &#x9;&#x9;
+    title Examples
+    | &#x9;&#x9;
+    meta(name='description', content='')
+    | &#x9;&#x9;
+    meta(name='keywords', content='')
+    | &#x9;&#x9;
+    link(href='', rel='stylesheet')
+    // Compiled and minified CSS
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css')
+    // Compiled and minified JavaScript
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js')
+  | &#x9;
+  body
+    div
+      .row
+        .col.s12.m6
+          .card
+            .card-content
+              img(style = "width:100%;" src='/images/infect/登革熱.jpg')
+        .col.s12.m6(style='margin:0px auto;')
+          .card
+            //
+              <div class="card-image" >
+              <img src="">
+              <span class="card-title">Card Title</span>
+              </div>
+            .card-content
+              h5 #{text}
+              h2 治療方法與就醫資訊
+              p
+                #{datas[0].治療方法與就醫資訊}
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            .card-action
+              a(href='#')
+        | &#x9;&#x9;&#x9;&#x9;
+       
+
+
+

@@ -1,0 +1,165 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    script(src='http://code.jquery.com/jquery-2.1.4.min.js')
+    // Material design lite
+    link(rel='stylesheet', href='https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css')
+    script(src='https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    // Bootstrap
+    // 最新編譯和最佳化的 CSS
+    // <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    // 選擇性佈景主題
+    // <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    // 最新編譯和最佳化的 JavaScript
+    // <script src="https://maxcn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    // 字型
+    // <link rel="stylesheet" id="material-gaze-fonts-css" href="//fonts.googleapis.com/css?family=Roboto%3A400%2C300%2C300italic%2C400italic%2C500%2C700%7CRoboto+Condensed%3A400%2C300%2C700&amp;ver=4.3" type="text/css" media="all">
+    // ICON
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css')
+    // materialize  css framework
+    // Compiled and minified CSS
+    // <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    // Compiled and minified JavaScript
+    // <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    // CSS
+    link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+    script(src='javascripts/loadtext.js')
+    script(src='javascripts/main.js')
+    script(src='javascripts/monoevent.js')
+  body
+    header
+      button#demo-menu-lower-left.mdl-button.mdl-js-button.mdl-button--icon
+        i.material-icons menu
+      #overlay.overlay(style='display:none;')
+      #box.box2
+        a#boxclose.boxclose
+        .nav
+          .nav-container
+            .cup-container
+              .wine
+            .fly
+            .fly
+          br
+          br
+          br
+          br
+          br
+          br
+          br
+          br
+          | ​
+          .buttonHolder
+            a.nav-button.home(href='#')
+            a.nav-button.news(href='#')
+            a.nav-button.heart._map(href='#')
+            a.nav-button.about-us(href='#')
+      // </ul>
+      h1.logo 流行病防疫網
+      // 疾病種類列表
+      .circle_manu
+        .test1.circle_manu_parameter
+          i
+          .tmask.dd(data-l='3', data-c='2')
+            // <i class="material-icons">accessibility</i>
+            p
+              | 常見
+              br
+              | 疾病
+        .test2.circle_manu_parameter
+          i
+          .testbutton.3rd_circlemenu2_1.dd(data-l='1', data-c='1')
+            p 蟲媒
+          .testbutton.3rd_circlemenu2_2.dd(data-l='2', data-c='1')
+            p 飲食
+          .testbutton.3rd_circlemenu2_3.dd(data-l='3', data-c='1')
+            p 空氣
+          .testbutton.3rd_circlemenu2_4.dd(data-l='4', data-c='1')
+            p 血液
+          .testbutton.3rd_circlemenu2_5.dd(data-l='5', data-c='1')
+            p 接觸
+          .tmask
+            // <i class="material-icons">repeat_one</i>
+            p
+              | 傳播
+              br
+              | 方式
+        .test3.circle_manu_parameter
+          i
+          .testbutton.3rd_circlemenu3_1.dd(data-l='1', data-c='0')
+            p 一類
+          .testbutton.3rd_circlemenu3_2.dd(data-l='2', data-c='0')
+            p 二類
+          .testbutton.3rd_circlemenu3_3.dd(data-l='3', data-c='0')
+            p 三類
+          .testbutton.3rd_circlemenu3_4.dd(data-l='4', data-c='0')
+            p 四類
+          .testbutton.3rd_circlemenu3_5.dd(data-l='5', data-c='0')
+            p 五類
+          // <div class="testbutton test3_6"><p>其他</p></div>
+          .tmask
+            // <i class="fa fa-random"></i>
+            p
+              | 法定
+              br
+              | 分類
+        .mask2
+          // <i class="fa fa-home fa-3x"></i>
+          p
+            | 疾病
+            br
+            | 列表
+      // diseade name
+      a#mobile_block
+      d_list1.d_list(data-l='1')
+      d_list2.d_list(data-l='2')
+      d_list3.d_list(data-l='3')
+      d_list4.d_list(data-l='4')
+      script(src='https://hammerjs.github.io/dist/hammer.js')
+      // ---------------mobile d-list------------------------------
+      md_list1.d_list(data-l='1')
+      md_list2.d_list(data-l='2')
+      md_list3.d_list(data-l='3')
+      md_list4.d_list(data-l='4')
+      md_list5.d_list(data-l='5')
+      md_list6.d_list(data-l='6')
+      lf_btn.material-icons(style='font-size: 70px; display:none; ;cursor: pointer;position:absolute;color: #FFFFFF;') keyboard_arrow_left
+      rg_btn.material-icons(style='font-size:   70px;display:none;cursor: pointer;position:absolute;color: #FFFFFF;') keyboard_arrow_right
+    .container
+      section.cr-container
+        label#cr-li-slide(style=' margin-left:0%')
+        input#select-img-1.cr-selector-img-1(name='radio-set-1', type='radio', checked='')
+        label.slidebutton.cr-label-img-1.textactive(for='select-img-1')
+          i.texticon.material-icons assignment
+          span.slidetext 傳播報告
+        input#select-img-2.cr-selector-img-2(name='radio-set-1', type='radio')
+        label.slidebutton.cr-label-img-2(style=' margin-left:20%', for='select-img-2')
+          i.texticon.fa.fa-heart
+          span.slidetext 疾病簡介
+        input#select-img-3.cr-selector-img-3(name='radio-set-1', type='radio')
+        label.slidebutton.cr-label-img-3(style=' margin-left:40%', for='select-img-3')
+          i.texticon.fa.fa-random
+          span.slidetext 傳染途徑
+        input#select-img-4.cr-selector-img-4(name='radio-set-1', type='radio')
+        label.slidebutton.cr-label-img-4(style=' margin-left:60%', for='select-img-4')
+          i.texticon.material-icons colorize
+          span.slidetext 預防措施
+        input#select-img-5.cr-selector-img-5(name='radio-set-1', type='radio')
+        label.slidebutton.cr-label-img-5(style=' margin-left:80%', for='select-img-5')
+          i.texticon.material-icons local_hospital
+          span.slidetext 就醫資訊
+        .cr-bgimg
+          div
+            span
+              iframe#report(height='600', scrolling='no', src='/map/index.html')
+            span
+              iframe#intro(height='600', src='users/intro/登革熱', style='background-color:rgba(128,128,128,0.1);')
+            span
+              iframe#ways(height='600', src='users/ways/登革熱', style='background-color:rgba(128,128,128,0.1);')
+            span
+              iframe#defeat(height='600', src='users/defeat/登革熱', style='background-color:rgba(128,128,128,0.1);')
+            span
+              iframe#infect(height='600', src='users/infect/登革熱', style='background-color:rgba(128,128,128,0.1);')
