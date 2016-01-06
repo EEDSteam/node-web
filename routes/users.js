@@ -22,7 +22,8 @@ router.get('/defeat/:id', function(req, res, next) {
 	res.locals.text = req.params.id;
 	projects2.find({疾病名稱:req.params.id}, function(err,datas,count){
 		res.render('users/defeat',{
-			datas:datas
+			datas:datas,
+			d:true
 		});
 
 	});

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- Material design lite-->
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- ICON-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- materialize  css framework-->
+    <!-- Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/posts.css">
+    <script src="../javascripts/loadtext.js"></script>
+    <script src="../javascripts/main.js"></script>
+    <script src="../javascripts/monoevent.js"></script>
+    <script src="../javascripts/intro.js"></script>
+</head>
+
+<body>
+    <style>
+    .type {
+        border: 1px solid gray;
+        padding: 5px;
+        border-radius: 5px;
+        margin: 5px;
+        transition: 0.5s;
+    }
+    .type:hover {
+        background-color: black;
+        color:white;
+        text-decoration: none;
+    }
+    </style>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">menu</i></button>
+                <div id="overlay" style="display:none;" class="overlay"></div>
+                <div id="box" class="box2">
+                    <a id="boxclose" class="boxclose"></a>
+                    <div class="nav">
+                        <div class="nav-container">
+                            <div class="cup-container">
+                                <div class="wine"></div>
+                            </div>
+                            <div class="fly"></div>
+                            <div class="fly"></div>
+                        </div>
+                        <div class="buttonHolder">
+                            <a href="#" class="nav-button home"></a>
+                            <a href="news/mainnews.html" class="nav-button news"></a>
+                            <a href="#" class="nav-button heart _map"></a>
+                            <a href="about-us/about.html" class="nav-button about-us"></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="/news/mainnews.html" class="brand-logo"><img style="width:100%;" src='/images/logo.png' alt=""></a>
+                <ul class="menu right hide-on-med-and-down">
+                    <li><a class="line" href="/news/trend.html">疫情趨勢</a></li>
+                    <li><a class="line" href="">疾病解說</a></li>
+                    <li><a class="line" href="">疫情預警</a></li>
+                    <li><a class="line" href="/news/posts.html">醫療專欄</a></li>
+                    <li><a class="line" href="/news/newspaper.html">相關新聞</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="cr-container">
+            <div class="row">
+                <div class="col s3 m3">
+                    <div style="margin:10%; text-align: center; border-right:1px solid gray;">
+                        <h1 style="font-size:30px;">Author</h1>
+                        <div style="margin-top:10%;">
+                            <img src="https://yowureport.com/wp-content/uploads/2015/01/%E5%91%A8%E6%AC%BD%E8%8F%AF_avatar_14200174431-300x295.jpg" style="width:100px;height:100px;border-radius:50px;" alt="">
+                            <h1 style="margin:5%;">Dr. XXX</h1>
+                            <p>Epedemic Disease Department</p>
+                        </div>
+                        <div style="margin-top:10%;">
+                            <img src="https://yowureport.com/wp-content/uploads/2015/06/tim-289x300.png" style="width:100px; height:100px; border-radius:50px;" alt="">
+                            <h1 style="margin:5%;">Dr.XXX</h1>
+                            <p>Health Department</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align:center;">
+                    <br>
+                    <br>
+                    <h1 style="font-size:30px; color:rgba(0,0,0,0.7)">流行病傳播趨勢，醫療設備，疫苗研發方向</h1>
+                </div>
+                <div style="margin: 1%;text-align:center;font-size:20px;">
+                    <a class="type" href="">預防</a>
+                    <a class="type" href="">新藥</a>
+                    <a class="type" href="">疾病趨勢</a>
+                    <a class="type" href="">醫療體制</a>
+                </div>
+                <div class="col s9 m9">
+                    <iframe id="report" height="600" src="news.html"></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-copyright">
+            <h1>© 2015 Copyright EDS</h1>
+        </div>
+    </footer>
+</body>

@@ -25,7 +25,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
     <!-- CSS-->
     <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/index.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/trend.css">
     <script src="../javascripts/loadtext.js"></script>
     <script src="../javascripts/main.js"></script>
     <script src="../javascripts/monoevent.js"></script>
@@ -49,8 +49,8 @@
                             <div class="fly"></div>
                         </div>
                         <div class="buttonHolder">
-                            <a href="news/mainnews.html" class="nav-button home"></a>
-                            <a href="/" class="nav-button news"></a>
+                            <a href="#" class="nav-button home"></a>
+                            <a href="news/mainnews.html" class="nav-button news"></a>
                             <a href="#" class="nav-button heart _map"></a>
                             <a href="about-us/about.html" class="nav-button about-us"></a>
                         </div>
@@ -58,7 +58,7 @@
                 </div>
                 <a href="/news/mainnews.html" class="brand-logo"><img style="width:100%;" src='/images/logo.png' alt=""></a>
                 <ul class="menu right hide-on-med-and-down">
-                    <li><a class="line" href="/news/trend.html">疫情趨勢</a></li>
+                    <li><a class="line active-button" href="/news/trend.html">疫情趨勢</a></li>
                     <li><a class="line" href="">疾病解說</a></li>
                     <li><a class="line" href="">疫情預警</a></li>
                     <li><a class="line" href="/news/posts.html">醫療專欄</a></li>
@@ -70,90 +70,72 @@
     <div class="container">
         <section class="cr-container">
             <div class="row">
-                <div class="col s12 m6">
-                    <div class="intro">
-                        <h1>疫點通</h1>
-                        <br>
-                        <h2>獲知疫情動向, 預防疾病感染 </h2>
-                    </div>
-                </div>
-                <div class="col s12 m6">
+                <div class="col m8">
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                         </ol>
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <div class="chart">
-                                    <div style="margin:30px; font-size:30px;"><a class="line " href="">登革熱專區</a></div>
-                                    <img class="activator" src="http://media.vocativ.com/photos/2015/04/baltimore_riots_map_1968_24099058519.jpg" style="width:100%; border-radius:20px; ">
+                                <div class="graph">
+                                    <img src="/images/1.jpg" style="width:100%; vertical-align:middle ;" alt="">
                                 </div>
-                                <div class="row" style="text-align:center;">
-                                    <div class="data col m4">
-                                        <div><i class="large material-icons">perm_identity</i></div>
-                                        <div>
-                                            <p>500+</p>
-                                            <p>昨日就診人數</p>
-                                        </div>
-                                    </div>
-                                    <div class="data col m4">
-                                        <div><i class="fa fa-map-o"></i></div>
-                                        <div>
-                                            <p>台南市 密集縣市</p>
-                                        </div>
-                                    </div>
-                                    <div class="data col m4">
-                                        <div><i class="large material-icons">supervisor_account</i></div>
-                                        <div>
-                                            <p>2000+ 本月累積人數</p>
-                                        </div>
-                                    </div>
+                                <div style="margin:0 25%;text-align:center;">
+                                    <form action="#">
+                                        <p class="range-field">
+                                            <input type="range" id="test5" min="0" max="100" />
+                                        </p>
+                                    </form>
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="chart">
-                                    <div style="margin:30px; font-size:30px;"><a class="line " href="">流感專區</a></div>
-                                    <img class="activator" src="http://i.stack.imgur.com/9GEAv.png" style="width:87.3%; border-radius:20px; ">
+                                <div class="graph">
+                                    <img src="http://www.hotel.com.tw/en/taiwanhotel/images/maps/def_taiwanmap.gif" style="width:72.8%; vertical-align:middle ;" alt="">
                                 </div>
-                                <div class="row" style="text-align:center;">
-                                    <div class="data col m4">
-                                        <div><i class="large material-icons">perm_identity</i></div>
-                                        <div>
-                                            <p>500+</p>
-                                            <p>昨日就診人數</p>
-                                        </div>
-                                    </div>
-                                    <div class="data col m4">
-                                        <div><i class="fa fa-map-o"></i></div>
-                                        <div>
-                                            <p>台南市 密集縣市</p>
-                                        </div>
-                                    </div>
-                                    <div class="data col m4">
-                                        <div><i class="large material-icons">supervisor_account</i></div>
-                                        <div>
-                                            <p>2000+ 本月累積人數</p>
-                                        </div>
-                                    </div>
+                                <div style="margin:0 25%;text-align:center;">
+                                    <form action="#">
+                                        <p class="range-field">
+                                            <input type="range" id="test5" min="0" max="100" />
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="graph">
+                                    <img src="http://i.stack.imgur.com/9GEAv.png" style="width:91.8%; vertical-align:middle ;" alt="">
+                                </div>
+                                <div style="margin:0 25%;text-align:center;">
+                                    <form action="#">
+                                        <p class="range-field">
+                                            <input type="range" id="test5" min="0" max="100" />
+                                        </p>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <!-- Controls -->
-                        <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a> -->
+                    </div>
+                </div>
+                <div class="col m4">
+                    <div class="row">
+                        <div class="trend-report ">
+                            <h1>MERS 疫情趨勢</h1>
+                            <br>
+                            <h1>主要傳染國家:  USA, UK, China</h1>
+                            <h1>感染人數:   1000000 people;</h1>
+                            <p style="width:100%">目前MERS病例仍集中於沙烏地阿拉伯、阿拉伯聯合大公國、卡達等中東地區，日前沙烏地阿拉伯增加疫情，多數與King Abdulaziz Medical City （KAMC）醫院之病患、家屬及醫療人員接觸有關，由於疫情侷限於該醫院急診部門，當地政府已關閉急診，並加強病例及接觸者管理。</p>
+                        </div>
+                        <div class="trend-report ">
+                            <h1>台灣疫情狀況</h1>
+                            <br>
+                            <p>目前MERS病例仍集中於沙烏地阿拉伯、阿拉伯聯合大公國、卡達等中東地區，日前沙烏地阿拉伯增加疫情，多數與King Abdulaziz Medical City （KAMC）醫院之病患、</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- <iframe id="report" height="600"  src="news.html"></iframe></span>                         -->
         </section>
     </div>
     <footer>
@@ -162,11 +144,11 @@
         </div>
     </footer>
     <script>
-    $(".button-collapse").sideNav();
-    $('#slideshow').carousel({
-           interval: 10000
-        });
+    $(document).ready(function() {
+        $('input#input_text, textarea#textarea1').characterCounter();
+        $('.carousel').carousel({
+            interval: false
+        })
+    });
     </script>
 </body>
-
-</html>

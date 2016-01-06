@@ -27,16 +27,11 @@ html
               img(style = "width:100%;" src='/images/infect/登革熱.jpg')
         .col.s12.m6(style='margin:0px auto;')
           .card
-            //
-              <div class="card-image" >
-              <img src="">
-              <span class="card-title">Card Title</span>
-              </div>
             .card-content
               h5 #{text}
               h2 治療方法與就醫資訊
               p
-                #{datas[0].治療方法與就醫資訊}
+                !{datas[0].治療方法與就醫資訊}
             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
             .card-action
               a(href='#')

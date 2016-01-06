@@ -51,14 +51,14 @@ $(document).ready(function() {
         var act3 = false;
         if (active1 == 0)
             $('.circle_manu').find('.test1').css({
-                'background-color': 'gray',
+                'background-color': '#FCE404',
                 'transform': 'translate(0px,125px)'
             });
 
         $('.test1').on('mousedown touchstart', function() {
             if (!act1) {
                 $(this).find('.3rd_circlemenu1_1').css({
-                    'background-color': 'gray',
+                    'background-color': '#FCE404',
                     'transform': 'translate(0px,125px)'
                 });
                 $('.test3').find(".testbutton").css({
@@ -71,37 +71,37 @@ $(document).ready(function() {
                 act2 = !act2;
             } else
                 $(this).find('.3rd_circlemenu1_1').css({
-                    'background-color': 'darkGray',
+                    'background-color': 'rgb(247,71,52)',
                     'transform': 'none'
                 });
             if (!act1)
                 $(this).find('.3rd_circlemenu1_2').css({
-                    'background-color': 'gray',
+                    'background-color': '#FCE404',
                     'transform': 'translate(-60px,105px)'
                 });
             else
                 $(this).find('.3rd_circlemenu1_2').css({
-                    'background-color': 'darkGray',
+                    'background-color': 'rgb(247,71,52)',
                     'transform': 'none'
                 });
             if (!act1)
                 $(this).find('.3rd_circlemenu1_3').css({
-                    'background-color': 'gray',
+                    'background-color': '#FCE404',
                     'transform': 'translate(-105px,60px)'
                 });
             else
                 $(this).find('.3rd_circlemenu1_3').css({
-                    'background-color': 'darkGray',
+                    'background-color': 'rgb(247,71,52)',
                     'transform': 'none'
                 });
             if (!act1)
                 $(this).find('.3rd_circlemenu1_4').css({
-                    'background-color': 'gray',
+                    'background-color':'#FCE404',
                     'transform': 'translate(-125px,0px)'
                 });
             else
                 $(this).find('.3rd_circlemenu1_4').css({
-                    'background-color': 'darkGray',
+                    'background-color': 'rgb(247,71,52)',
                     'transform': 'none'
                 });
             act1 = !act1;
@@ -109,7 +109,7 @@ $(document).ready(function() {
 
         if (active1 == 1) {
             $('.circle_manu').find('.test1').css({
-                'background-color': 'dimGray',
+                'background-color': 'rgb(247,71,52)',
                 'transform': 'none'
             });
             $('.test3').find(".testbutton").css({
@@ -124,7 +124,7 @@ $(document).ready(function() {
 
         if (active2 == 0)
             $('.circle_manu').find('.test2').css({
-                'background-color': 'gray',
+                'background-color': '#FCE404',
                 'transform': 'translate(0px,250px)'
             });
 
@@ -180,12 +180,12 @@ $(document).ready(function() {
         }); //中間第二層
         if (active2 == 1)
             $('.circle_manu').find('.test2').css({
-                'background-color': 'darkGray',
+                'background-color': 'rgb(247,71,52)',
                 'transform': 'none'
             });
         if (active3 == 0)
             $('.circle_manu').find('.test3').css({
-                'background-color': 'gray',
+                'background-color':  '#FCE404',
                 'transform': 'translate(0px,375px)'
             });
         $('.test3').on('mousedown touchstart', function() {
@@ -322,21 +322,7 @@ $(document).ready(function() {
     //   var act=0; 
     d0.click(function() {
         var str = "";
-        //  act=!act;
-        //  if(act==1){
-        //    $(".testbutton").css({
-        //          transform: 'none'     
-        //      });
-        //      $(".test3").css({
-        //         transform: 'none'     
-        //      });
-        //      $(".test2").css({
-        //          transform: 'none'     
-        //    });
-        //      $(".test1").css({
-        //         transform: 'none'     
-        //     });
-        // }
+
         if ($(this).data("c") == 2) { //common disease
             for (var i = 0; i < 4; i++) //import the data
                 disease_name[i] = disease_data[2][i];
@@ -519,29 +505,13 @@ $(document).ready(function() {
             $('#mobile_block').delay(10).hide('10');
             reset();
 
-
-
-            /*
-    
-    if($(this).data("l")!=disease_click_index)
-    {   //若click為非放大的則將原本放大的縮小
-
-    $('d_list'+disease_click_index).css({
-    'background-color': '#7B7777','border-bottom': '5px solid #464242'
-    }); 
-        disease_click_index=$(this).data("l");
-
-    $(this).css({
-        'background-color': '#BD4646','border-bottom': '5px solid #7D2F2F'
-    });
-    }*/
         })
 
         $('d_list' + j).mouseover(function() {
             //放大
             $(this).css({
-                'background-color': '#BD4646',
-                'border-bottom': '5px solid #7D2F2F'
+                'background-color': 'rgb(247,71,52)',
+                'border-bottom': '1px solid #7D2F2F'
             });
 
         })
@@ -550,8 +520,8 @@ $(document).ready(function() {
         $('d_list' + j).mouseout(function() {
             if ($(this).data("l") != disease_click_index)
                 $(this).css({
-                    'background-color': '#7B7777',
-                    'border-bottom': '5px solid #464242'
+                    'background-color': ' #FCE404',
+                    'border-bottom': '1px solid #464242'
                 });
 
         })
@@ -572,14 +542,37 @@ $(document).ready(function() {
             mlist_show = 0;
 
             $('#mobile_block').delay(10).hide('10');
+            currentname = $(this).text();
+            var intro = 'http://127.0.0.1:3000/users/intro/'+currentname;
+            var ways = 'http://127.0.0.1:3000/users/ways/'+currentname;
+            var defeat = 'http://127.0.0.1:3000/users/defeat/'+currentname;
+            var infect = 'http://127.0.0.1:3000/users/infect/'+currentname;
+            // $("iframe")[0].setAttribute("src", "http://www.w3schools.com/js/js_output.asp");
+            $("iframe")[1].setAttribute("src", "users/intro/"+currentname);
+            $("iframe")[2].setAttribute("src", "users/ways/"+currentname);
+            $("iframe")[3].setAttribute("src", "users/defeat/"+currentname);
+            $("iframe")[4].setAttribute("src", "users/infect/"+currentname);
+            // alert(intro);
+            console.log(intro);
+            var  introimg = $("iframe").contents().find("img");
+            introimg.setAttribute("src", "/images/intro/"+currentname+".jpg");
+
+            var waysimg = $("iframe")[2].contents().find("img");
+            waysimg.setAttribute("src", "/images/ways/"+currentname+".jpg");
+
+            var defeatimg = $("iframe")[3].contents().find("img");
+            defeatimg.setAttribute("src", "/images/defeat/"+currentname+".jpg");
+
+            var infectimg = $("iframe")[4].contents().find("img");
+            infectimg.setAttribute("src", "/images/infect/"+currentname+".jpg");
             reset();
         })
 
         $('md_list' + j).mouseover(function() {
             //放大
             $(this).css({
-                'background-color': '#BD4646',
-                'border-bottom': '5px solid #7D2F2F'
+                'background-color': 'rgb(247,71,52)',
+                'border-bottom': '1px solid #7D2F2F'
             });
 
         })
@@ -588,8 +581,8 @@ $(document).ready(function() {
         $('md_list' + j).mouseout(function() {
             if ($(this).data("l") != disease_click_index)
                 $(this).css({
-                    'background-color': '#7B7777',
-                    'border-bottom': '5px solid #464242'
+                    'background-color': '#FCE404',
+                    'border-bottom': '1px solid #464242'
                 });
 
         })
@@ -602,8 +595,8 @@ $(document).ready(function() {
         for (var z = 1; z <= 4; z++) {
 
             $('d_list' + z).css({
-                'background-color': '#7B7777',
-                'border-bottom': '5px solid #464242'
+                'background-color': '#FCE404',
+                'border-bottom': '1px solid #464242'
             });
         }
 
@@ -612,8 +605,8 @@ $(document).ready(function() {
         for (var z = 1; z <= 6; z++) {
 
             $('md_list' + z).css({
-                'background-color': '#7B7777',
-                'border-bottom': '5px solid #464242'
+                'background-color': '#FCE404',
+                'border-bottom': '1px solid #464242'
             });
         }
 
@@ -630,24 +623,24 @@ $(document).ready(function() {
                 if (disease_name[index + i - 1].length < 5)
                 //alert(disease_name[index+i-1].length);
                     $('d_list' + i).css({
-                    'font-size': '22px',
+                    'font-size': '21px',
                     'line-height': '30px'
                 });
                 else if (disease_name[index + i - 1].length <= 7 && disease_name[index + i - 1].length >= 5)
                     $('d_list' + i).css({
                         'font-size': '16px',
-                        'line-height': '30px'
+                        'line-height': '16px',
                     });
                 else if (disease_name[index + i - 1].length <= 9 && disease_name[index + i - 1].length > 7)
                     $('d_list' + i).css({
-                        'font-size': '13px',
-                        'line-height': '30px'
+                        'font-size': '15px',
+                        'line-height': '16px'
                     });
 
                 else
                     $('d_list' + i).css({
-                        'font-size': '13px',
-                        'line-height': '20px'
+                        'font-size': '12px',
+                        'line-height': '16px'
                     });
                 $('d_list' + i).text(disease_name[index + i - 1]);
 
@@ -662,24 +655,24 @@ $(document).ready(function() {
             if ((index + i - 1) <= (disease_list_length - 1)) {
                 if (disease_name[index + i - 1].length < 5)
                     $('md_list' + i).css({
-                        'font-size': '19px',
+                        'font-size': '18px',
                         'line-height': '30px'
                     });
                 else if (disease_name[index + i - 1].length <= 7 && disease_name[index + i - 1].length >= 5)
                     $('md_list' + i).css({
-                        'font-size': '16px',
+                        'font-size': '14px',
                         'line-height': '30px'
                     });
                 else if (disease_name[index + i - 1].length <= 9 && disease_name[index + i - 1].length > 7)
                     $('md_list' + i).css({
                         'font-size': '13px',
-                        'line-height': '30px'
+                        'line-height': '16px'
                     });
 
                 else
                     $('md_list' + i).css({
                         'font-size': '13px',
-                        'line-height': '20px'
+                        'line-height': '16px'
                     });
 
                 $('md_list' + i).text(disease_name[index + i - 1]);

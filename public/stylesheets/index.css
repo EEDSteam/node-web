@@ -1,0 +1,198 @@
+body{
+	background-color: black;
+	color:white;
+	font-family: "微軟正黑體";
+	background-image: url(http://www.davidicke.com/wp-content/uploads/2014/07/Black-And-Gray-Bacteria.jpg);
+	background-repeat:no-repeat;
+	background-size: 45%;
+	background-position: left bottom;
+	/*#0E0F13*/
+}
+header{
+	background-color: transparent;
+	box-shadow: 0 0 0 0 ;
+}
+nav{
+	background-color:transparent;
+	box-shadow:0 0 0 0 rgba(0,0,0,0);
+}
+.mdl-button{
+	vertical-align:top ;
+}
+
+.brand-logo{
+	width:15%;
+}
+.menu{
+	vertical-align:middle ;
+}
+.menu li a{
+	padding:15px;
+}
+.menu li{
+	opacity: 0.8;
+}
+.menu li:hover{
+	transition:0.2s;
+	opacity: 1;
+}
+.menu li a:hover{
+  text-decoration: none;
+  color:orange;
+}
+
+.line{
+  padding: 15px 20px;
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+}
+.line::before {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: white;
+  display: block;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+  transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+}
+
+.line:hover::before {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1)
+}
+
+
+.chart{
+	padding: 5% 10%;
+	text-align: center;
+}
+
+.district{
+  /* position centered */
+  display: inline-block;
+  position: relative;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  /* text styles */
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  /* modify text */
+  text-decoration: none;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  /* add a border */
+  border: 0.15em solid #fff;
+  padding: 0.4em 0.6em;
+  /* animate the change */
+  -webkit-transition: color 300ms, background 500ms, border-color 700ms;
+  transition: color 300ms, background 500ms, border-color 700ms;
+}
+
+.district:hover {
+  background: rgba(255,255,255,0.8);
+  border-color:rgba(255,255,255,0.8) ;
+  color: #545e7a;
+}
+
+
+.intro{
+	margin-top:20%;
+	text-align: center;
+}
+.intro h1{
+	font-size:80px;
+}
+.intro h2{
+	font-size:20px;
+}
+
+
+
+.data{
+	display: inline;
+	
+}
+.data i{
+	font-size: 50px;
+}
+.data p{
+	display: inline;
+}
+
+.carousel-indicators {
+    bottom: -20px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 50px;
+    height: 10px;
+    margin: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0,0,0,0);
+    border: solid gray;
+    border-width: 0px 0px 2px 0px;
+    border-radius: 0px;
+    transition:0.2s;
+}
+
+.carousel-indicators li:hover {
+    background-color: #000 \9;
+    background-color: rgba(0,0,0,0);
+    border: solid white;
+    border-width: 0px 0px 2px 0px;
+    /*border-radius: 10px;*/
+}
+
+.carousel-indicators .active {
+    width: 50px;
+    height: 10px; 
+    margin: 3px;
+    background-color: rgba(0,0,0,0);
+    border: solid rgba(255,255,255,0.8);
+    border-width: 0px 0px 2px 0px;
+}
+
+
+
+
+footer{
+	position: fixed;
+	width:100%;
+	background-color: transparent;
+	bottom:0px;
+}
+.footer-copyright{
+	margin-left:10px;
+	margin-top:5px;
+	margin-bottom:5px;
+	font-size: 12px;
+
+}
+
+
+/*slide*/
+
+

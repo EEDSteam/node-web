@@ -17,16 +17,27 @@ html
       .row
         .col.s12.m6(style='margin:0px auto;')
           .card
-            //- //
-            //-   <div class="card-image" >
-            //-   <img src="">
-            //-   <span class="card-title">Card Title</span>
-            //-   </div>
-            img(style = "width:100%;" src='/images/defeat/登革熱.jpg')
+            h3 預防方法
+            case datas[0].傳染途徑
+              when "蟲媒"
+                img(style = "width:50%;" src='/images/defeat/蟲媒/注重環境清潔.png')
+                img(style = "width:50%;" src='/images/defeat/蟲媒/積水容器.png')
+              when "食物或飲水"
+                img(style = "width:50%;" src='/images/defeat/食物或飲水/生食.png')
+                img(style = "width:50%;" src='/images/defeat/食物或飲水/衛生食物.png')
+              when "空氣或飛沫"
+                img(style = "width:50%;" src='/images/defeat/空氣或飛沫/勤洗手.png')
+                img(style = "width:50%;" src='/images/defeat/空氣或飛沫/戴口罩.png')
+              when "性接觸或血液"
+                img(style = "width:50%;" src='/images/defeat/性接觸或血液/不共用物品.png')
+                img(style = "width:50%;" src='/images/defeat/性接觸或血液/避免多重伴侶.png')
+              when "接觸傳染"
+                img(style = "width:50%;" src='/images/defeat/接觸傳染/身體清潔.png')
+                img(style = "width:50%;" src='/images/defeat/接觸傳染/避免野生動物.png')
+              default
+                img(style = "width:100%;" src='/images/defeat/登革熱.jpg')
             .card-content
-              h3 預防方法
-              p
-                #{datas[0].預防方法}
+              p !{datas[0].預防方法}
         .col.s12.m6(style='margin:0px auto;')
           .card
             //
@@ -36,7 +47,6 @@ html
               </div>
             .card-content
               h3 預防接種建議
-              p
-                #{datas[0].預防接種建議}
+              p !{datas[0].預防接種建議}
             .card-action
               a(target="_blank" href='#{datas[0].頁面}') 詳細資訊

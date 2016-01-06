@@ -1,7 +1,36 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    block title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    script(src='http://code.jquery.com/jquery-2.1.4.min.js')
+    // Material design lite
+    link(rel='stylesheet', href='https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css')
+    script(src='https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    // Bootstrap
+    // 最新編譯和最佳化的 CSS
+    // <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    // 選擇性佈景主題
+    // <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    // 最新編譯和最佳化的 JavaScript
+    // <script src="https://maxcn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    // 字型
+    // <link rel="stylesheet" id="material-gaze-fonts-css" href="//fonts.googleapis.com/css?family=Roboto%3A400%2C300%2C300italic%2C400italic%2C500%2C700%7CRoboto+Condensed%3A400%2C300%2C700&amp;ver=4.3" type="text/css" media="all">
+    // ICON
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css')
+    // materialize  css framework
+    // Compiled and minified CSS
+    // <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    // Compiled and minified JavaScript
+    // <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    // CSS
+    link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+    script(src='javascripts/loadtext.js')
+    script(src='javascripts/main.js')
+    script(src='javascripts/monoevent.js')
+    script(src='javascripts/intro.js')
   body
     block content
